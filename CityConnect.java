@@ -202,7 +202,7 @@ public class CityConnect {
 					newEndLocation);
 		} else {
 			return String.format(MESSAGE_DISTANCE, newStartLocation,
-					newEndLocation, route[position][STORAGE_POSITION_DISTANCE]);
+					newEndLocation, route[position][DISTANCE]);
 		}
 
 	}
@@ -269,7 +269,7 @@ public class CityConnect {
 			String newEndLocation, String distance, int entryPosition) {
 		route[entryPosition][START_LOCATION] = newStartLocation;
 		route[entryPosition][END_LOCATION] = newEndLocation;
-		route[entryPosition][STORAGE_POSITION_DISTANCE] = distance;
+		route[entryPosition][DISTANCE] = distance;
 	}
 
 	/**
