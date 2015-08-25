@@ -63,20 +63,19 @@ public class CityConnect {
 	private static final int PARAM_SIZE_FOR_ADD_ROUTE = 3;
 	private static final int PARAM_SIZE_FOR_GET_DISTANCE = 2;
 
-	// These are the locations at which various parameters will appear in a command
+	// These are the locations at which various parameters will appear in a
+	// command
 	/*
 	 * These are the locations at which various components of the route will be
 	 * stored in the routes[][] array.
 	 */
-	
+
 	private static final int START_LOCATION = 0;
 	private static final int END_LOCATION = 1;
 	private static final int DISTANCE = 2;
 
 	// This array will be used to store the routes
 	private static String[][] route = new String[10][3];
-
-	
 
 	/*
 	 * This variable is declared for the whole class (instead of declaring it
@@ -98,7 +97,7 @@ public class CityConnect {
 		while (true) {
 			System.out.print("Enter command:");
 			String userCommand = scanner.nextLine();
-			//String userCommand = command;
+			// String userCommand = command;
 			String feedback = executeCommand(userCommand);
 			showToUser(feedback);
 		}
@@ -211,7 +210,8 @@ public class CityConnect {
 	 * @return Returns the position of the route represented by newStartLocation
 	 *         and newEndLocation. Returns NOT_FOUND if not found.
 	 */
-	private static int getPositionOfExistingRoute(String newStartLocation, String newEndLocation) {
+	private static int getPositionOfExistingRoute(String newStartLocation,
+			String newEndLocation) {
 		for (int i = 0; i < route.length; i++) {
 
 			String existing_start_location = route[i][START_LOCATION];
@@ -334,4 +334,5 @@ public class CityConnect {
 		String[] parameters = commandParametersString.trim().split("\\s+");
 		return parameters;
 	}
+
 }
