@@ -8,7 +8,7 @@
 
 import java.util.Scanner;
 
-/**
+/*
  * This class is used to store and retrieve the distance between various
  * locations A route is assumed to be bidirectional. i.e., a route from CityA to
  * CityB is same as a route from CityB to CityA. Furthermore, there can be no
