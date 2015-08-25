@@ -99,8 +99,8 @@ public class CityConnect {
 		showToUser(WELCOME_MESSAGE);
 		while (true) {
 			System.out.print("Enter command:");
-			String command = scanner.nextLine();
-			String userCommand = command;
+			String userCommand = scanner.nextLine();
+			//String userCommand = command;
 			String feedback = executeCommand(userCommand);
 			showToUser(feedback);
 		}
@@ -213,8 +213,7 @@ public class CityConnect {
 	 * @return Returns the position of the route represented by newStartLocation
 	 *         and newEndLocation. Returns NOT_FOUND if not found.
 	 */
-	private static int getPositionOfExistingRoute(String newStartLocation,
-			String newEndLocation) {
+	private static int getPositionOfExistingRoute(String newStartLocation, String newEndLocation) {
 		for (int i = 0; i < route.length; i++) {
 
 			String existing_start_location = route[i][STORAGE_POSITION_START_LOCATION];
